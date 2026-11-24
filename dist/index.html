@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Formación práctica para personal de soporte de DeiWorld.">
+  <title>Formación de soporte · DeiWorld</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio">
+      <span class="brand-mark">DW</span>
+      <span><strong>DeiWorld</strong><small>Academia de soporte</small></span>
+    </a>
+    <button class="menu-button" id="menuButton" aria-expanded="false" aria-controls="sidebar">Menú</button>
+    <div class="top-actions">
+      <label class="search"><span>Buscar</span><input id="searchInput" type="search" placeholder="Ticket, módulo o concepto…"></label>
+      <button class="outline-button" id="resetProgress">Reiniciar progreso</button>
+    </div>
+  </header>
+
+  <aside class="sidebar" id="sidebar">
+    <nav aria-label="Navegación principal">
+      <a class="nav-link active" href="#inicio">Visión general</a>
+      <a class="nav-link" href="#ruta">Ruta de aprendizaje</a>
+      <a class="nav-link" href="#protocolo">Protocolo de tickets</a>
+      <a class="nav-link" href="#capsulas">Cápsulas</a>
+      <a class="nav-link" href="#recursos">Plantillas</a>
+    </nav>
+    <div class="sidebar-note">
+      <span class="eyebrow">Principio rector</span>
+      <p>Atender siempre. Resolver cuando se pueda. Escalar con contexto. Informar hasta el cierre.</p>
+    </div>
+  </aside>
+
+  <main id="contenido">
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <span class="eyebrow">Formación práctica · primera línea</span>
+        <h1>Aprender soporte mientras el trabajo sucede.</h1>
+        <p>Una ruta para convertir cada ticket real en conocimiento reutilizable, sin exigir una formación lineal ni conocimientos técnicos previos.</p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#ruta">Empezar la ruta</a>
+          <a class="text-link" href="#protocolo">Ver protocolo común</a>
+        </div>
+      </div>
+      <div class="hero-panel" aria-label="Progreso de la formación">
+        <div class="progress-ring" id="progressRing"><span id="progressPercent">0%</span></div>
+        <div><strong id="progressText">0 de 13 cápsulas</strong><p>El progreso se guarda en este navegador.</p></div>
+      </div>
+    </section>
+
+    <section class="metrics" aria-label="Objetivos operativos">
+      <article><strong>100%</strong><span>de tickets atendidos</span></article>
+      <article><strong>3 máx.</strong><span>urgentes simultáneos</span></article>
+      <article><strong>1 fecha</strong><span>para la próxima actualización</span></article>
+      <article><strong>0</strong><span>promesas sin confirmar</span></article>
+    </section>
+
+    <section class="section" id="ruta">
+      <div class="section-heading"><div><span class="eyebrow">Método gradual</span><h2>De observar a gestionar</h2></div><p>La autonomía crece por tipos de caso, no por antigüedad.</p></div>
+      <div class="steps">
+        <article><span>01</span><h3>Observar</h3><p>Escuchar cómo se interpreta el ticket y por qué se toman decisiones.</p></article>
+        <article><span>02</span><h3>Preparar</h3><p>Resumir, clasificar, detectar datos faltantes y redactar una respuesta.</p></article>
+        <article><span>03</span><h3>Gestionar</h3><p>Resolver casos documentados y escalar el resto con contexto completo.</p></article>
+        <article><span>04</span><h3>Consolidar</h3><p>Crear una ficha validada y explicar cómo conecta con otros procesos.</p></article>
+      </div>
+    </section>
+
+    <section class="section protocol" id="protocolo">
+      <div class="section-heading"><div><span class="eyebrow">Aplicable a todos los módulos</span><h2>Protocolo de atención</h2></div><p>Una estructura estable cuando el contenido cambia cada día.</p></div>
+      <div class="protocol-grid">
+        <ol class="protocol-list">
+          <li><span>1</span><div><strong>Comprender</strong><p>¿Qué intenta conseguir el cliente y en qué paso se detiene?</p></div></li>
+          <li><span>2</span><div><strong>Completar</strong><p>Cliente, referencia, pasos, resultado esperado, resultado real, error y evidencias.</p></div></li>
+          <li><span>3</span><div><strong>Clasificar</strong><p>Módulo, solicitud o incidencia, impacto, bloqueo y urgencia real.</p></div></li>
+          <li><span>4</span><div><strong>Actuar</strong><p>Resolver un caso conocido o escalarlo con resumen y comprobaciones realizadas.</p></div></li>
+          <li><span>5</span><div><strong>Dar seguimiento</strong><p>Estado, responsable, próxima acción y fecha de nueva comunicación.</p></div></li>
+          <li><span>6</span><div><strong>Cerrar y aprender</strong><p>Confirmar solución, documentar el caso y enlazar el ticket de ejemplo.</p></div></li>
+        </ol>
+        <aside class="do-dont">
+          <div><span class="status good">Sí</span><p>Comunicar hechos confirmados y distinguirlos de hipótesis.</p></div>
+          <div><span class="status good">Sí</span><p>Aunque no haya solución, fijar cuándo se volverá a informar.</p></div>
+          <div><span class="status bad">No</span><p>Prometer plazos, causas o viabilidad sin validación técnica.</p></div>
+          <div><span class="status bad">No</span><p>Dejar un ticket escalado sin próxima revisión.</p></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="capsulas">
+      <div class="section-heading"><div><span class="eyebrow">Microformación conectada al trabajo</span><h2>13 cápsulas de aprendizaje</h2></div><p>Abre una cápsula, practica con un ticket y marca lo consolidado.</p></div>
+      <div class="filters" role="group" aria-label="Filtrar cápsulas">
+        <button class="filter active" data-filter="all">Todas</button>
+        <button class="filter" data-filter="base">Base</button>
+        <button class="filter" data-filter="operativa">Operativa</button>
+        <button class="filter" data-filter="comercial">Comercial</button>
+        <button class="filter" data-filter="finanzas">Finanzas</button>
+        <button class="filter" data-filter="gestion">Gestión</button>
+      </div>
+      <div class="capsule-grid" id="capsuleGrid"></div>
+      <p class="empty-state" id="emptyState" hidden>No hay cápsulas que coincidan con la búsqueda.</p>
+    </section>
+
+    <section class="section resources" id="recursos">
+      <div class="section-heading"><div><span class="eyebrow">Uso diario</span><h2>Plantillas rápidas</h2></div><p>Textos para copiar, adaptar y validar.</p></div>
+      <div class="resource-grid">
+        <article><h3>Resumen interno</h3><p>“El cliente intenta [objetivo]. En [paso] obtiene [resultado]. Esperaba [resultado esperado]. Impacta a [alcance]. Falta confirmar [dato].”</p><button class="copy-button" data-copy="El cliente intenta [objetivo]. En [paso] obtiene [resultado]. Esperaba [resultado esperado]. Impacta a [alcance]. Falta confirmar [dato].">Copiar plantilla</button></article>
+        <article><h3>Acuse de recibo</h3><p>“Hemos registrado la consulta y estamos revisando la información. Te actualizaremos de nuevo antes de [fecha/hora], aunque el análisis siga en curso.”</p><button class="copy-button" data-copy="Hemos registrado la consulta y estamos revisando la información. Te actualizaremos de nuevo antes de [fecha/hora], aunque el análisis siga en curso.">Copiar plantilla</button></article>
+        <article><h3>Escalado técnico</h3><p>“Problema, impacto, referencias, pasos, esperado/obtenido, evidencias, comprobaciones realizadas y decisión o ayuda necesaria.”</p><button class="copy-button" data-copy="Problema: [resumen]. Impacto: [alcance]. Referencias: [datos]. Pasos: [secuencia]. Esperado/obtenido: [detalle]. Evidencias: [enlaces]. Comprobaciones: [lista]. Se necesita: [decisión o ayuda].">Copiar plantilla</button></article>
+        <article><h3>Ficha de conocimiento</h3><p>Señales para reconocer el caso, datos que pedir, comprobaciones, solución validada, límites, escalado y respuesta modelo.</p><button class="copy-button" data-copy="Caso: [nombre]. Señales: [cómo reconocerlo]. Datos a pedir: [lista]. Comprobaciones: [pasos]. Solución validada: [solución]. Límites: [qué no afirmar]. Escalar a: [rol]. Respuesta modelo: [texto]. Ticket de ejemplo: [enlace].">Copiar plantilla</button></article>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="capsuleDialog" aria-labelledby="dialogTitle">
+    <button class="dialog-close" id="dialogClose" aria-label="Cerrar">Cerrar</button>
+    <div id="dialogContent"></div>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
